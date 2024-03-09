@@ -3,13 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RV Shop</title>
+    <title>Campervan</title>
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <img id="header-image"
+        src="/pics/header-rv.jpg"
+        alt="picture of rv in the field from breaking bad with the smoke comeing from the roof"
+      />
+      <div id="contact-info">
+        <div id="nubmer">164-264-8456</div>
+        <div id="socials">
+            <a class="social-link" id="youtube" href="https://www.youtube.com/"></a>
+            <a class="social-link" id="facebook" href="https://www.facebook.com/"></a>
+            <a class="social-link" id="instagram" href="https://www.instagram.com/"></a>
+        </div>
+      </div>
+    </header>
     <nav>
-      <div id="button-menu">Menu</div>
+        <div id="bar">
+            <div id="button-home"></div>
+            <div id="button-menu">Menu</div>
+        </div>
       <ul id="menu">
         <li>About</li>
         <li>Contact</li>
@@ -17,7 +33,46 @@
     </nav>
     <script src="/script.js"></script>
 
-    <main>main</main>
+    <main>
+      <section class="main-section">
+        <h2>Choose your RV type</h2>
+        <section class="secondary-section">
+          <h3>Integrated</h3>
+          <ul class="type-list">
+            <li class="type">
+              <p>Class A</p>
+            </li>
+            <li class="type">
+              <p>Class B</p>
+            </li>
+            <li class="type">
+              <p>Class C</p>
+            </li>
+          </ul>
+        </section>
+        <section class="secondary-section">
+          <h3>Towable</h3>
+          <gr class="type-list">
+            <li class="type">
+              <p>Travel Trailer</p>
+            </li>
+            <li class="type">
+              <p>Fifth Wheel</p>
+            </li>
+            <li class="type">
+              <p>Toy Hauler</p>
+            </li>
+            <li class="type">
+              <p>Pop Up</p>
+            </li>
+            <li class="type">
+              <p>Truck Camper</p>
+            </li>
+          </section>
+        </section>
+      </section>
+    </main>
+
     <footer>footer</footer>
   </body>
 </html>

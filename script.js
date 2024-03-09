@@ -1,3 +1,4 @@
+//Toggle menu button
 document
   .getElementsByTagName("nav")[0]
   .addEventListener("click", function (event) {
@@ -10,3 +11,10 @@ document
       }
     }
   });
+
+//Prevet the image from stretching on page reload
+window.addEventListener("load", () => {
+  let image = document.getElementById("header-image");
+  image.style.width = "100%";
+  image.style.height = "auto";
+});
