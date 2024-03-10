@@ -1,9 +1,10 @@
 body {
   margin: 0;
 
-  display: flex;
+  display: none;
   flex-direction: column;
   font-family: Tahoma;
+  color: brown;
 }
 
 header {
@@ -15,16 +16,20 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: end;
+
+  background-image: url(/pics/header-rv.jpg);
+  background-size: 120%;
+  background-position: center;
 }
-header img {
+/*header img {
   max-width: 100%;
   scale: 1.5;
   transform: translate(0, -15px);
 
-  /*put image on the background*/
+  /*put image on the background
   position: absolute;
   z-index: -1;
-}
+}*/
 #contact-info {
   height: 100vh;
   width: 20vh;
@@ -81,7 +86,7 @@ header img {
 }
 /* Navigation */
 nav {
-  background-color: rgb(69, 69, 69);
+  background-color: rgb(238, 189, 126);
 }
 nav * {
   padding: 20px;
@@ -104,7 +109,7 @@ nav * {
 }
 #button-menu {
   width: 90%;
-  background-color: rgb(84, 84, 84);
+  background-color: rgb(231, 145, 33);
   cursor: pointer;
   user-select: none;
 }
@@ -118,15 +123,33 @@ nav * {
 #menu,
 #menu * {
   max-height: 0;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.3s ease-out;
 }
 #menu.active,
 #menu.active * {
   max-height: 200px;
 }
+#menu li {
+  padding: 0;
+}
+.page-button {
+  text-decoration: none;
+  display: block;
+  margin: 0;
+
+  color: brown;
+
+  background-color: rgb(228, 157, 64);
+}
+.page-button.active {
+  background-color: rgb(250, 205, 146);
+}
+.page-button:hover {
+  background-color: rgb(242, 192, 127);
+}
 
 main {
-  background-color: aliceblue;
+  background-color: rgb(237, 220, 170);
   display: flex;
   flex-direction: column;
 }
@@ -140,7 +163,7 @@ h2 {
 }
 
 h3 {
-  background-color: rgb(232, 232, 232);
+  background-color: rgb(228, 157, 64);
   margin: 0;
   padding: 10px;
   border-radius: 10px 10px 0 0;
@@ -152,11 +175,13 @@ h3 {
 
   display: flex;
   flex-direction: column;
+
+  background-color: rgb(216, 201, 155);
 }
 
 .type-list {
   margin-top: 0;
-  background-color: rgb(197, 197, 197);
+  background-color: rgb(192, 179, 139);
   border-radius: 0 0 10px 10px;
   padding: 20px;
   box-shadow: inset 5px 5px rgba(0, 0, 0, 0.3);
